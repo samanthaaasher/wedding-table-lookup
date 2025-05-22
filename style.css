@@ -1,15 +1,48 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Georgia', serif;
+  background-color: #fff5f7;
+  color: #3d3d3d;
   text-align: center;
-  padding: 2rem;
+  padding: 3rem;
+  margin: 0;
 }
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #c44569;
+  margin-bottom: 2rem;
+}
+
 input {
-  padding: 0.5rem;
-  width: 300px;
-  font-size: 16px;
+  padding: 0.75rem;
+  width: 80%;
+  max-width: 400px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
+
 ul {
   list-style: none;
   padding: 0;
-  font-size: 18px;
+  margin-top: 2rem;
+}
+
+li {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+strong {
+  color: #d72638;
 }
