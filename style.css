@@ -1,0 +1,15 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 2rem;
+}
+input {
+  padding: 0.5rem;
+  width: 300px;
+  font-size: 16px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+}
