@@ -1,12 +1,10 @@
 const searchBox = document.getElementById('searchBox');
 const results = document.getElementById('results');
 
-// ✅ Your actual Google Apps Script URL with ?q=init
 const API_URL = 'https://script.google.com/macros/s/AKfycbymzdVegL4S1SlGdJcrdOfIf_z5PLfh_m2rcGjEIW1Nngn3u5mY_xAH4fGj9ysu0m7M/exec?q=init';
 
 let allGuests = [];
 
-// Fetch full guest list once
 async function loadGuests() {
   try {
     const res = await fetch(API_URL);
@@ -17,7 +15,6 @@ async function loadGuests() {
   }
 }
 
-// Search guest list locally
 function filterGuests(keyword) {
   const q = keyword.toLowerCase();
   return allGuests.filter(g =>
@@ -25,7 +22,6 @@ function filterGuests(keyword) {
   );
 }
 
-// Handle search input
 searchBox.addEventListener('input', () => {
   const query = searchBox.value.trim().toLowerCase();
   results.innerHTML = '';
@@ -41,5 +37,4 @@ searchBox.addEventListener('input', () => {
     : '<li>No match found.</li>';
 });
 
-// Load guest list on page load
 loadGuests();
