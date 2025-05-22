@@ -1,15 +1,15 @@
 const searchBox = document.getElementById('searchBox');
 const results = document.getElementById('results');
 
-// ✅ This is your updated working Google Apps Script URL
 const API_URL = 'https://script.google.com/macros/s/AKfycbwiQ00SH6MFJH1kJVQ3r3t7IaDhg3hpLoeSmkWM8bpI9zSyh2RJwgd3xUyTRoH80HcE/exec?q=';
 
 searchBox.addEventListener('input', async () => {
   const query = searchBox.value.trim();
-  if (query.length < 2) {
-    results.innerHTML = '';
-    return;
-  }
+
+  // Always clear previous results before showing new ones
+  results.innerHTML = '';
+
+  if (query.length < 2) return;
 
   try {
     const res = await fetch(API_URL + encodeURIComponent(query));
