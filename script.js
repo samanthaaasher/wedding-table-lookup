@@ -21,3 +21,4 @@ searchBox.addEventListener('input', async () => {
     console.error('Fetch error:', error);
   }
 });
+
