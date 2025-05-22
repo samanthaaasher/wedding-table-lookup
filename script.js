@@ -2,7 +2,7 @@ const searchBox = document.getElementById('searchBox');
 const results = document.getElementById('results');
 
 // ✅ Your working Google Apps Script endpoint:
-const API_URL = 'https://script.google.com/macros/s/AKfycbw0ss6DjMLynci3EJSaoE7ju7gBzD1VrS2TS7QjXJFwqlcJS-10gj3MyW2N3D-Xo5k_/exec?q=';
+const API_URL = 'https://script.google.com/macros/s/AKfycbwiQ00SH6MFJH1kJVQ3r3t7IaDhg3hpLoeSmkWM8bpI9zSyh2RJwgd3xUyTRoH80HcE/exec';
 
 searchBox.addEventListener('input', async () => {
   const query = searchBox.value.trim();
